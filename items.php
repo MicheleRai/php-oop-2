@@ -1,7 +1,7 @@
 <?php
 
 include __DIR__ .'/Registered.php.php';
-class Item {
+abstract class Items {
     public $price;
     public $animal;
     public $stazza;
