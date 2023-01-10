@@ -1,11 +1,11 @@
 <?php
-class User {
-    private $name;
-    private $userName;
-    private $email;
-    private $creditCard;
+class user {
+    public $name;
+    public $userName;
+    public $email;
+    public $creditCard;
     public $discount = 0;
-    private $registered;
+    public $registered;
 
     public function __construct($name, $userName, $email, $creditCard, $registered)
     {

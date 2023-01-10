@@ -15,8 +15,8 @@ include_once __DIR__ . '/cucce.php';
 include_once __DIR__ . '/giochi.php';
 include_once __DIR__ . '/registered.php';
 
-$marco = new User('marco', 'rossi', 'marco@mail.com', 123464589123456, true);
-$gioco = new giochi('freesbee', 23, 'cane', '55');
+$marco = new user ('marco', 'rossi', 'marco@mail.com', 123464589123456, true);
+$gioco = new giochi ('freesbee', 23, 'cane', '55');
 
 var_dump($user);
 var_dump($toy1);
