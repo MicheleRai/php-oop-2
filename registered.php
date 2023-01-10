@@ -1,4 +1,4 @@
 <?php
 class registered extends user {
-    public $sconto = 20;
+    public $discount = 20;
 }

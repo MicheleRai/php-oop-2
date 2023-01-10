@@ -1,17 +1,29 @@
 <?php
+class User {
+    private $name;
+    private $userName;
+    private $email;
+    private $creditCard;
+    public $discount = 0;
+    private $registered;
 
-class user{
-    protected $nome;
-    protected $cognome;
-    protected $email;
-
-    public function __construct($nome, $cognome, $email)
+    public function __construct($name, $userName, $email, $creditCard, $registered)
     {
-        $this->nome = $nome;
-        $this->cognome = $cognome;
-        $this->email = $email;
+        $this->name = $name;
+        $this->userName = $userName;
+        $this->email =$email;
+        $this->creditCard = $creditCard;
+        $this->setRegistered($registered);
+    }
+
+    
+    public function setRegistered($registered)
+    {
+        if(is_bool($registered) && $registered == true){
+            $this->discount = 20;
+            $this->registered = true;
+        } else {
+            $this->registered = false;
+        }
     }
 }
-$matteo = new user ('matteo', 'Rossi', 'matt@gmail.com');
-$alessandro = new user ('alessandro', 'bianchi', 'ale@libero.it');
-
