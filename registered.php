@@ -1,4 +1,4 @@
 <?php
-class registered extends user {
+class registered extends User {
     public $discount = 20;
 }

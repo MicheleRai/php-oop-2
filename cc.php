@@ -46,6 +46,6 @@ class CreditCard{
     }
 }
 
-$card1 = new CreditCard(1234567891234567, 235, '01/01/2027');
+//$card1 = new CreditCard(1234567891234567, 235, '01/01/2027');
 
-var_dump($card1);
+//var_dump($card1);

@@ -1,5 +1,5 @@
 <?php
-class user {
+class User {
     public $name;
     public $userName;
     public $email;
@@ -25,5 +25,11 @@ class user {
         } else {
             $this->registered = false;
         }
+    }
+
+
+    public function getDiscount()
+    {
+        return $this->discount;
     }
 }

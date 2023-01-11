@@ -15,8 +15,12 @@ include_once __DIR__ . '/cucce.php';
 include_once __DIR__ . '/giochi.php';
 include_once __DIR__ . '/registered.php';
 
-$marco = new user ('marco', 'rossi', 'marco@mail.com', 123464589123456, true);
-$gioco = new giochi ('freesbee', 23, 'cane', '55');
+$marco = new User ('marco', 'rossi', 'marco@mail.com', 123464589123456, true);
+$gioco = new Giochi ('freesbee', 23, 'cane', '55');
+$sconto = $marco->getDiscount();
+$prezzo = $gioco->getPrice($sconto);
 
-var_dump($user);
-var_dump($toy1);
+var_dump($marco);
+var_dump($gioco);
+var_dump($sconto);
+var_dump($prezzo);
